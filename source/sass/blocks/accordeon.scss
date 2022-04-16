@@ -1,0 +1,40 @@
+.accordeon__trigger {
+  @media (max-width: $mobile-width) {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 1px;
+      background-color: $color-white-medium;
+      right: 27px;
+      top: 5px;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.accordeon--open .accordeon__trigger {
+  @media (max-width: $mobile-width) {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.accordeon__content {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.accordeon--open .accordeon__content {
+  @media (max-width: $mobile-width) {
+    display: grid;
+  }
+}

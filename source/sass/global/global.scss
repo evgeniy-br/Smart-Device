@@ -28,13 +28,18 @@ img {
   margin: 0 auto;
   box-sizing: content-box;
 
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    width: 64%;
+    padding: 0 18%;
+  }
+
   @media (max-width: $tablet-width) {
-    width: 670px;
-    padding: 0 50px;
+    width: 87%;
+    padding: 0 6.5%;
   }
 
   @media (max-width: $mobile-width) {
-    width: 270px;
-    padding: 0 25px;
+    width: 84%;
+    padding: 0 8%;
   }
 }

@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Лучшие печатные платы">
     <title>Smart Device</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page__header header">
+      <div class="wrapper">
+        <div class="header__wrapper">
+          <div class="header__logo-wrapper">
+            <a>
+              <picture>
+                <source media="(max-width: 769px)" srcset="img/content/logo-mobile.svg">
+                <img src="img/content/logo-desktop.svg" width="215" height="55" alt="Наш логотип. Изображение, похожее на мозг.">
+              </picture>
+            </a>
+          </div>
+          <ul class="header__contacts">
+            <li class="header__contacts-item header__contacts-item--email">
+              <a class="header__contacts-link" href="mailto:info@sd.ru"><span class="header__contacts-text">info@sd.ru</span></a>
+            </li>
+            <li class="header__contacts-item header__contacts-item--phone">
+              <a class="header__contacts-link" href="tel:+74950005252"><span class="header__contacts-text">+7 (495) 000 52 52</span></a>
+            </li>
+          </ul>
+          <div class="header__contacts-button-wrapper">
+            <ul class="header__contacts-button-list">
+              <li class="header__contacts-button">
+                <a  class="header__contacts-button-link" href="#">Заказать звонок</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page__main">
 
+    </main>
+    <footer class="page__footer">
+      <div class="footer">
+        <div class="footer__wrapper-logo-social">
+          <div class="footer__logo-wrapper">
+            <a>
+              <img src="img/content/logo-desktop.svg" width="215" height="55" alt="Наш логотип. Изображение, похожее на мозг.">
+            </a>
+          </div>
+          <div class="social">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+            <a class="social__link social__link--odnoklassniki" href="#">
+              <span class="visually-hidden">Odnoklassniki</span>
+            </a>
+            <a class="social__link social__link--vkontakte" href="#">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </div>
+        </div>
+        <nav class="footer__nav accordeon accordeon--open">
+          <div class="accordeon__trigger">
+            <h2>Разделы сайта</h2>
+          </div>
+          <ul class="footer__nav-list accordeon__content">
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">О Компаниии</a></li>
+            <li class="footer__nav-item footer__nav-item--products"><a class="footer__nav-link" href="#">Продукты</a></li>
+            <li class="footer__nav-item footer__nav-item--production"><a class="footer__nav-link" href="#">Протзводство печатных <br> плат</a></li>
+            <li class="footer__nav-item footer__nav-item--montage"><a class="footer__nav-link" href="#">Монтаж печатных плат</a></li>
+            <li class="footer__nav-item footer__nav-item--accessories"><a class="footer__nav-link" href="#">Комплектующие</a></li>
+            <li class="footer__nav-item footer__nav-item--delivery"><a class="footer__nav-link" href="#">Доставка</a></li>
+            <li class="footer__nav-item footer__nav-item--contacts"><a class="footer__nav-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="footer__contacts-wrapper accordeon accordeon--open">
+          <div class="accordeon__trigger">
+            <h2>Наш офис</h2>
+          </div>
+          <ul class="footer__contacts-list accordeon__content">
+            <li class="footer__contacts-item footer__contacts-address">г. Мытищи, Олимпийский проспект, д.10</li>
+            <li class="footer__contacts-item"><a class="footer__phone-link" href="tel:+74955894050">+7 (495) 589-40-50</a></li>
+            <li class="footer__contacts-item"><a class="footer__phone-link" href="tel:+79253895829">+7 (925) 389-58-29</a></li>
+            <li class="footer__contacts-item"><a class="footer__phone-link" href="tel:+79253647813">+7 (925) 364-78-13</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

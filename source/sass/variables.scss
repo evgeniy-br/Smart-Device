@@ -11,10 +11,17 @@ $color-default-white:               #f2f5f6;
 $color-blue-dark:                   #041427;
 $color-blue:                        #00B2FF;
 $color-white:                       #ffffff;
+$color-white-medium:               #f8fdff;
 $color-white-transparent:           rgba(255, 255, 255, 0.7);
+$color-border-footer:               rgba(248, 253, 255, 0.7);
 
 // Display width
 
-$desktop-only: 1920px;
+$desktop-max: 1920px;
+$desktop-min: 1023px;
 $tablet-width: 1023px;
 $mobile-width: 769px;
+
+// Other
+
+$roboto-condensed: 'Roboto Condensed', 'Arial', sans-serif;
