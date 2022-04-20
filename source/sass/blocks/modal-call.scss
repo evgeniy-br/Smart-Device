@@ -1,0 +1,125 @@
+.modal-call {
+  display: none;
+  position: relative;
+  top: 50%;
+  width: 500px;
+  min-height: 610px;
+  margin: 0 auto;
+  background-color: $color-blue-another;
+  padding: 40px;
+  border-radius: 3px;
+}
+
+.modal-call h2 {
+  font-size: 30px;
+  line-height: 42px;
+  font-family: $roboto-condensed;
+  font-weight: 400;
+  color: $color-white;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.modal-call p {
+  font-size: 16px;
+  line-height: 21px;
+  color: $color-white;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.modal-call input {
+  width: 100%;
+  margin-bottom: 20px;
+  min-height: 50px;
+  border: none;
+  background-color: $color-gray-transparent;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 21px;
+  color: $color-white;
+  border-radius: 3px;
+}
+
+.modal-call textarea {
+  width: 100%;
+  margin-bottom: 25px;
+  min-height: 155px;
+  border: none;
+  background-color: $color-gray-transparent;
+  padding: 25px 15px;
+  font-size: 16px;
+  line-height: 21px;
+  color: $color-white;
+  border-radius: 3px;
+}
+
+.modal-call input::placeholder,
+.modal-call textarea::placeholder {
+  color: $color-white;
+  opacity: 0.7;
+}
+
+.modal-call__button {
+  width: 100%;
+  margin-bottom: 20px;
+  min-height: 45px;
+  border: none;
+  border-radius: 3px;
+  background-color: $color-blue-dark;
+  color: $color-white;
+  font-family: $roboto-condensed;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.modal-call__checkbox-wrapper label {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-white;
+  padding-left: 34px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $color-white;
+    border-radius: 2px;
+    left: 9px;
+    top: 0;
+  }
+}
+
+.modal-call__checkbox-wrapper input:checked + label {
+  &::before {
+    background: url('../img/svg/check.svg') center no-repeat;
+  }
+}
+
+.modal-call__button-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  top: 10px;
+  right: 10px;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 1px;
+    background-color: $color-white;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

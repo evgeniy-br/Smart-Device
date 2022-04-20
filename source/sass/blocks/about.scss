@@ -1,0 +1,106 @@
+.about {
+  margin-bottom: 100px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.about__wrapper {
+  position: relative;
+  padding: 0 0 20px 250px;
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 320px;
+    background: url('../img/background/2022.png') no-repeat;
+    top: 0;
+    left: 0;
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+}
+
+.about__wrapper h2 {
+  font-family: $roboto-condensed;
+  font-size: 36px;
+  line-height: 51px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  color: $color-default-black;
+
+  @media (max-width: $mobile-width) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.about__wrapper p {
+  margin: 0;
+  margin-top: 20px;
+  color: $color-default-black;
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.about__text-hidden-mobile {
+  @media (max-width: $mobile-width) {
+    display: none;
+
+    &--active {
+      display: inline;
+    }
+  }
+}
+
+.about__hidden-text {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.about__button {
+  margin-top: 36px;
+  padding: 14px 15px;
+  min-width: 180px;
+  min-height: 45px;
+  border: 1px solid $color-blue;
+  border-radius: 3px;
+  color: $color-blue;
+  background-color: $color-extra-light-gray;
+  text-transform: uppercase;
+  font-family: $roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 15px;
+    padding: 8px 15px;
+    font-size: 14px;
+    line-height: 16px;
+    min-width: 160px;
+    min-height: 35px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

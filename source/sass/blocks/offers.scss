@@ -1,0 +1,127 @@
+.offers {
+  background-color: $color-default-black;
+}
+
+.offers__header-desktop {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.offers__header-mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: inline;
+  }
+}
+
+.offers__wrapper {
+  padding: 70px 0 140px;
+
+  @media (max-width: $tablet-width) {
+    padding: 60px 0 75px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 50px 0 86px;
+  }
+}
+
+.offers h2 {
+  font-family: $roboto-condensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-white;
+  margin: 0;
+  margin-bottom: 50px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.offers__list {
+  display: flex;
+  gap: 85px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    column-gap: 7%;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.offers__item {
+  position: relative;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: '';
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 3px;
+    background: $color-blue url('../img/svg/arrow.svg') center no-repeat;
+    pointer-events: none;
+
+    @media (max-width: $mobile-width) {
+      width: 40px;
+      height: 40px;
+      background-image: url('../img/svg/arrow-mobile.svg');
+    }
+  }
+}
+
+.offers__link {
+  text-decoration: none;
+}
+
+.offers__img-wrapper img {
+  vertical-align: bottom;
+  object-fit: cover;
+
+  @media (max-width: $tablet-width) {
+    height: 250px;
+  }
+}
+
+.offers__list h3 {
+  top: 50px;
+  left: 40px;
+  position: absolute;
+  margin: 0;
+  color: $color-white;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: $roboto-condensed;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    top: 7.7%;
+    left: 11.4%;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    top: 30px;
+    left: 30px;
+  }
+}

@@ -131,6 +131,14 @@
 .footer__nav-link {
   color: $color-white-transparent;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__contacts-wrapper {
@@ -185,6 +193,14 @@
   color: $color-white-transparent;
   text-decoration: none;
   line-height: 25px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (max-width: $mobile-width) {
     font-size: 14px;

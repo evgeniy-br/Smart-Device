@@ -12,6 +12,7 @@
   min-width: 1920px;
   line-height: 21px;
   min-height: 100%;
+  background-color: $color-extra-light-gray;
 
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     min-width: 1024px;
@@ -27,6 +28,11 @@
 }
 
 .page__header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
   background: linear-gradient(180deg, $color-default-black 84.9%, transparent);
 }
 

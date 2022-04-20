@@ -19,4 +19,12 @@
   &--vkontakte {
    background-image: url('../img/svg/vk.svg');
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
