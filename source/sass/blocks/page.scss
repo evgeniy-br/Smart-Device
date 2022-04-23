@@ -5,7 +5,7 @@
 .page__body {
   display: flex;
   flex-direction: column;
-  font-family: 'PT Mono', 'Courier New', monospaced;
+  font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 16px;
   color: $color-default-white;
@@ -24,6 +24,21 @@
 
   @media (max-width: $mobile-width) {
     min-width: 320px;
+  }
+
+  &--opened-modal {
+    overflow-y: hidden;
+
+    &::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $color-gray-medium-transparent;
+      z-index: 2;
+    }
   }
 }
 

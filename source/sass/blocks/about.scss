@@ -1,6 +1,10 @@
 .about {
   margin-bottom: 100px;
 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 59px;
+  }
+
   @media (max-width: $mobile-width) {
     margin-bottom: 80px;
   }
@@ -10,18 +14,31 @@
   position: relative;
   padding: 0 0 20px 250px;
 
+  @media (max-width: $tablet-width) {
+    padding-left: 175px;
+  }
+
   @media (max-width: $mobile-width) {
     padding: 0;
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 150px;
     height: 320px;
-    background: url('../img/background/2022.png') no-repeat;
+    background: url("../img/background/2022.png") no-repeat;
     top: 0;
     left: 0;
+
+    @media (max-width: $tablet-width) {
+      left: -3px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/2022@2x.png");
+      background-size: 150px auto;
+    }
 
     @media (max-width: $mobile-width) {
       display: none;
@@ -33,24 +50,32 @@
   font-family: $roboto-condensed;
   font-size: 36px;
   line-height: 51px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   font-weight: 400;
   color: $color-default-black;
+
+  @media (max-width: $tablet-width) {
+    left: -3px;
+    line-height: 42px;
+    margin-bottom: 18px;
+  }
 
   @media (max-width: $mobile-width) {
     font-size: 28px;
     line-height: 39px;
+    margin-bottom: 12px;
   }
 }
 
 .about__wrapper p {
   margin: 0;
-  margin-top: 20px;
+  margin-bottom: 24px;
   color: $color-default-black;
 
   @media (max-width: $mobile-width) {
     font-size: 14px;
     line-height: 19px;
+    margin-bottom: 18px;
   }
 }
 
@@ -73,7 +98,7 @@
 }
 
 .about__button {
-  margin-top: 36px;
+  margin-top: 15px;
   padding: 14px 15px;
   min-width: 180px;
   min-height: 45px;
@@ -85,10 +110,14 @@
   font-family: $roboto-condensed;
   font-weight: 700;
   font-size: 14px;
+  letter-spacing: 0.8px;
   cursor: pointer;
 
+  @media (max-width: $tablet-width) {
+    margin-top: -4px;
+  }
+
   @media (max-width: $mobile-width) {
-    margin-top: 15px;
     padding: 8px 15px;
     font-size: 14px;
     line-height: 16px;

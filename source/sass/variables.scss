@@ -18,14 +18,17 @@ $color-border-footer:               rgba(248, 253, 255, 0.7);
 $color-extra-light-gray:            #f8fdff;
 $color-light-gray:                  #ebebeb;
 $color-gray-transparent:            rgba(4, 20, 39, 0.15);
+$color-gray-medium-transparent:     rgba(3, 16, 27, 0.7);
 
 // Display width
 
 $desktop-max: 1919px;
 $desktop-min: 1024px;
 $tablet-width: 1023px;
+$tablet-resize: 771px;
 $mobile-width: 769px;
+$mobile-resize: 321px;
 
 // Other
 
-$roboto-condensed: 'Roboto Condensed', 'Arial', sans-serif;
+$roboto-condensed: "Roboto Condensed", "Arial", sans-serif;

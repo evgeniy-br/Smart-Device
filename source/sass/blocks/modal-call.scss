@@ -1,13 +1,19 @@
 .modal-call {
   display: none;
-  position: relative;
-  top: 50%;
+  position: fixed;
   width: 500px;
   min-height: 610px;
-  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: $color-blue-another;
   padding: 40px;
   border-radius: 3px;
+  z-index: 3;
+
+  &--open {
+    display: block;
+  }
 }
 
 .modal-call h2 {
@@ -52,6 +58,7 @@
   line-height: 21px;
   color: $color-white;
   border-radius: 3px;
+  resize: none;
 }
 
 .modal-call input::placeholder,
@@ -73,6 +80,7 @@
   line-height: 19px;
   text-transform: uppercase;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .modal-call__checkbox-wrapper label {
@@ -81,9 +89,10 @@
   line-height: 16px;
   color: $color-white;
   padding-left: 34px;
+  cursor: pointer;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 15px;
     height: 15px;
@@ -92,11 +101,16 @@
     left: 9px;
     top: 0;
   }
+
+  &:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: 7px;
+  }
 }
 
 .modal-call__checkbox-wrapper input:checked + label {
   &::before {
-    background: url('../img/svg/check.svg') center no-repeat;
+    background: url("../img/svg/check.svg") center no-repeat;
   }
 }
 
@@ -108,10 +122,11 @@
   background-color: transparent;
   top: 10px;
   right: 10px;
+  cursor: pointer;
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 28px;
     height: 1px;

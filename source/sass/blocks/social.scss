@@ -1,23 +1,32 @@
 .social {
   display: flex;
   gap: 25px;
-  margin-left: 10px;
+  margin-left: 15px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 4px;
+    margin-left: 4px;
+  }
 }
 
 .social__link {
   display: block;
   width: 30px;
   height: 31px;
-  background-image: url('../img/svg/facebook.svg');
+  background-image: url("../img/svg/facebook.svg");
   background-repeat: no-repeat;
   background-position: center;
 
   &--odnoklassniki {
-   background-image: url('../img/svg/odnoklassniki.svg');
+    background-image: url("../img/svg/odnoklassniki.svg");
   }
 
   &--vkontakte {
-   background-image: url('../img/svg/vk.svg');
+    background-image: url("../img/svg/vk.svg");
   }
 
   &:hover {
