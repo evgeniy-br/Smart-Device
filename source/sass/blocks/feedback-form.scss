@@ -283,6 +283,10 @@
     left: 0;
     top: 3px;
 
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+      top: -2px;
+    }
+
     @media (max-width: $tablet-width) {
       top: 5px;
     }
