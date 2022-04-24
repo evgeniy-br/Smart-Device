@@ -589,6 +589,7 @@ img {
   line-height: 21px;
   min-height: 100%;
   background-color: #f8fdff;
+  overflow-x: hidden;
 }
 
 .page__body--opened-modal {
@@ -1433,22 +1434,6 @@ img {
 }
 
 @media (min-width: 1024px) {
-  .offers__item--mounting h3 {
-    max-width: 165px;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1024px), (min-resolution: 2dppx) and (min-width: 1024px) {
-  .feedback-form {
-    background-image: url("../img/background/background-form@2x.png");
-  }
-
-  .feedback-form__wrapper::before {
-    background-image: url("../img/background/paper-airplane@2x.png");
-  }
-}
-
-@media (min-width: 1919px) {
   .footer__nav-item--montage {
     -webkit-box-ordinal-group: 6;
     -ms-flex-order: 5;
@@ -1477,6 +1462,20 @@ img {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
+  }
+
+  .offers__item--mounting h3 {
+    max-width: 165px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1024px), (min-resolution: 2dppx) and (min-width: 1024px) {
+  .feedback-form {
+    background-image: url("../img/background/background-form@2x.png");
+  }
+
+  .feedback-form__wrapper::before {
+    background-image: url("../img/background/paper-airplane@2x.png");
   }
 }
 
@@ -2110,6 +2109,14 @@ img {
     width: 64%;
     padding: 50px 18% 55px;
     gap: 30px;
+  }
+
+  .footer__wrapper-logo-social {
+    margin-right: auto;
+  }
+
+  .footer__nav {
+    margin-right: auto;
   }
 
   .preview__wrapper {

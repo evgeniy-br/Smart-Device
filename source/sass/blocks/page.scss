@@ -13,6 +13,7 @@
   line-height: 21px;
   min-height: 100%;
   background-color: $color-extra-light-gray;
+  overflow-x: hidden;
 
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     min-width: 1024px;

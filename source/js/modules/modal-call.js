@@ -2,11 +2,13 @@ const orderButton = document.querySelector('.header__contacts-button-link');
 const modalCall = document.querySelector('.modal-call');
 const pageBody = document.querySelector('.page__body');
 const buttonCloseModal = document.querySelector('.modal-call__button-close');
+const nameInput = document.querySelector('#name-call');
 
 orderButton.addEventListener('click', (evt) => {
   evt.preventDefault();
   modalCall.classList.toggle('modal-call--open');
   pageBody.classList.toggle('page__body--opened-modal');
+  nameInput.focus();
 });
 
 buttonCloseModal.addEventListener('click', () => {

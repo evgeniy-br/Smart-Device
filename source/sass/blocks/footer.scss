@@ -29,6 +29,10 @@
   margin-right: 159px;
   flex-shrink: 0;
 
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    margin-right: auto;
+  }
+
   @media (max-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -61,6 +65,10 @@
 .footer__nav {
   margin-right: 125px;
   padding-top: 8px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    margin-right: auto;
+  }
 
   @media (max-width: $tablet-width) {
     margin-right: 148px;
@@ -116,7 +124,7 @@
 }
 
 .footer__nav-item {
-  @media (min-width: $desktop-max) {
+  @media (min-width: $desktop-min) {
     &--montage {
       order: 5;
     }
