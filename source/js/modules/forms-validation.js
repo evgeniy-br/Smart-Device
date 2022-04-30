@@ -22,7 +22,7 @@ textareas.forEach((textarea) => {
 window.addEventListener('DOMContentLoaded', () => {
   [].forEach.call(document.querySelectorAll('input[type="tel"]'), (input) => {
     let keyCode;
-    function mask(event) {
+    function Mask(event) {
       let pos = this.selectionStart;
       if (pos < 3) {
         event.preventDefault();
@@ -50,9 +50,9 @@ window.addEventListener('DOMContentLoaded', () => {
         this.value = '';
       }
     }
-    input.addEventListener('input', mask, false);
-    input.addEventListener('focus', mask, false);
-    input.addEventListener('blur', mask, false);
-    input.addEventListener('keydown', mask, false);
+    input.addEventListener('input', Mask, false);
+    input.addEventListener('focus', Mask, false);
+    input.addEventListener('blur', Mask, false);
+    input.addEventListener('keydown', Mask, false);
   });
 });

@@ -9,4 +9,4 @@ if (anchor) {
       block: 'start',
     });
   });
-};
+}

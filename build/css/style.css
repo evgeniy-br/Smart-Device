@@ -585,26 +585,10 @@ img {
   font-weight: 400;
   font-size: 16px;
   color: #f2f5f6;
-  min-width: 1920px;
+  min-width: 320px;
   line-height: 21px;
   min-height: 100%;
   background-color: #f8fdff;
-  overflow-x: hidden;
-}
-
-.page__body--opened-modal {
-  overflow-y: hidden;
-}
-
-.page__body--opened-modal::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(3, 16, 27, 0.7);
-  z-index: 2;
 }
 
 .page__header {
@@ -1531,10 +1515,6 @@ img {
     display: none;
   }
 
-  .page__body {
-    min-width: 770px;
-  }
-
   .footer {
     width: 87%;
     padding: 50px 6.5% 65px;
@@ -1764,10 +1744,6 @@ img {
   .header__contacts {
     padding-top: 3px;
     margin-right: 0;
-  }
-
-  .page__body {
-    min-width: 320px;
   }
 
   .footer {
@@ -2099,10 +2075,6 @@ img {
 
   .header__logo-wrapper {
     margin-right: auto;
-  }
-
-  .page__body {
-    min-width: 1024px;
   }
 
   .footer {

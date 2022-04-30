@@ -9,38 +9,10 @@
   font-weight: 400;
   font-size: 16px;
   color: $color-default-white;
-  min-width: 1920px;
+  min-width: 320px;
   line-height: 21px;
   min-height: 100%;
   background-color: $color-extra-light-gray;
-  overflow-x: hidden;
-
-  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
-    min-width: 1024px;
-  }
-
-  @media (max-width: $tablet-width) {
-    min-width: 770px;
-  }
-
-  @media (max-width: $mobile-width) {
-    min-width: 320px;
-  }
-
-  &--opened-modal {
-    overflow-y: hidden;
-
-    &::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: $color-gray-medium-transparent;
-      z-index: 2;
-    }
-  }
 }
 
 .page__header {
