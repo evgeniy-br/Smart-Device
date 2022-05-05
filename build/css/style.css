@@ -436,7 +436,6 @@ img {
 
 .wrapper {
   width: 1220px;
-  padding: 0 350px;
   margin: 0 auto;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -622,7 +621,7 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 1220px;
-  padding: 50px 350px 55px;
+  padding: 50px 0 55px;
   margin: 0 auto;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -1466,7 +1465,6 @@ img {
 @media (max-width: 1023px) {
   .wrapper {
     width: 86.9%;
-    padding: 0 6.49%;
   }
 
   .header__wrapper {
@@ -1517,7 +1515,7 @@ img {
 
   .footer {
     width: 87%;
-    padding: 50px 6.5% 65px;
+    padding: 50px 0 65px;
   }
 
   .footer__wrapper-logo-social {
@@ -1729,7 +1727,6 @@ img {
 @media (max-width: 769px) {
   .wrapper {
     width: 84%;
-    padding: 0 8%;
   }
 
   .header__wrapper {
@@ -2070,7 +2067,6 @@ img {
 @media (min-width: 1024px) and (max-width: 1919px) {
   .wrapper {
     width: 64%;
-    padding: 0 18%;
   }
 
   .header__logo-wrapper {
@@ -2079,7 +2075,7 @@ img {
 
   .footer {
     width: 64%;
-    padding: 50px 18% 55px;
+    padding: 50px 0 55px;
     gap: 30px;
   }
 
