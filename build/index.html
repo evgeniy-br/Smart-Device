@@ -235,28 +235,30 @@
     <!-- Модальное окно 'Задать вопрос' -->
 
     <section class="modal-call">
-      <h2>Закажите звонок</h2>
-      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <div class="modal-call__name-wrapper">
-          <label class="visually-hidden" for="name-call">Ваше имя</label>
-          <input type="text" id="name-call" name="name-call" placeholder="Имя" required>
-        </div>
-        <div class="modal-call__phone-wrapper">
-          <label class="visually-hidden" for="phone-call">Ваш номер телефона</label>
-          <input type="tel" id="phone-call" name="phone-call" title="Используйте числовой формат" placeholder="Телефон" required>
-        </div>
-        <div class="modal-call__text-wrapper">
-          <label class="visually-hidden" for="text-call">Ваш вопрос</label>
-          <textarea name="text-call" id="text-call" placeholder="Ваш вопрос"></textarea>
-        </div>
-        <button class="modal-call__button" type="submit">Отправить</button>
-        <div class="modal-call__checkbox-wrapper">
-          <input class="visually-hidden" type="checkbox" id="approval-call" name="approval-call" checked required>
-          <label for="approval-call">Я согласен на обработку  персональных данных</label>
-        </div>
-      </form>
-      <button class="modal-call__button-close" type="button" ></button>
+      <div class="modal-call__container">
+        <h2>Закажите звонок</h2>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <div class="modal-call__name-wrapper">
+            <label class="visually-hidden" for="name-call">Ваше имя</label>
+            <input type="text" id="name-call" name="name-call" placeholder="Имя" required>
+          </div>
+          <div class="modal-call__phone-wrapper">
+            <label class="visually-hidden" for="phone-call">Ваш номер телефона</label>
+            <input type="tel" id="phone-call" name="phone-call" title="Используйте числовой формат" placeholder="Телефон" required>
+          </div>
+          <div class="modal-call__text-wrapper">
+            <label class="visually-hidden" for="text-call">Ваш вопрос</label>
+            <textarea name="text-call" id="text-call" placeholder="Ваш вопрос"></textarea>
+          </div>
+          <button class="modal-call__button" type="submit">Отправить</button>
+          <div class="modal-call__checkbox-wrapper">
+            <input class="visually-hidden" type="checkbox" id="approval-call" name="approval-call" checked required>
+            <label for="approval-call">Я согласен на обработку  персональных данных</label>
+          </div>
+        </form>
+        <button class="modal-call__button-close" type="button" ></button>
+      </div>
     </section>
 
     <script src="js/main.min.js"></script>

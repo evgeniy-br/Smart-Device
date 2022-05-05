@@ -485,6 +485,7 @@ img {
   position: relative;
   padding-left: 34px;
   padding-bottom: 9px;
+  cursor: pointer;
 }
 
 .header__contacts-item:hover {
@@ -588,6 +589,21 @@ img {
   line-height: 21px;
   min-height: 100%;
   background-color: #f8fdff;
+}
+
+.page__body--opened-modal {
+  overflow-y: hidden;
+}
+
+.page__body--opened-modal::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(3, 16, 27, 0.7);
+  z-index: 2;
 }
 
 .page__header {
@@ -1227,6 +1243,14 @@ img {
   cursor: pointer;
 }
 
+.feedback-form__checkbox-wrapper label:hover {
+  opacity: 0.7;
+}
+
+.feedback-form__checkbox-wrapper label:active {
+  opacity: 0.3;
+}
+
 .feedback-form__checkbox-wrapper label::before {
   content: "";
   position: absolute;
@@ -1247,7 +1271,7 @@ img {
   outline-offset: 7px;
 }
 
-.modal-call {
+.modal-call__container {
   display: none;
   position: fixed;
   width: 500px;
@@ -1263,11 +1287,11 @@ img {
   z-index: 3;
 }
 
-.modal-call--open {
+.modal-call__container--open {
   display: block;
 }
 
-.modal-call h2 {
+.modal-call__container h2 {
   font-size: 30px;
   line-height: 42px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1277,7 +1301,7 @@ img {
   margin-bottom: 10px;
 }
 
-.modal-call p {
+.modal-call__container p {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
@@ -1285,7 +1309,7 @@ img {
   margin-bottom: 40px;
 }
 
-.modal-call input {
+.modal-call__container input {
   width: 100%;
   margin-bottom: 20px;
   min-height: 50px;
@@ -1298,7 +1322,7 @@ img {
   border-radius: 3px;
 }
 
-.modal-call textarea {
+.modal-call__container textarea {
   width: 100%;
   margin-bottom: 25px;
   min-height: 155px;
@@ -1312,32 +1336,32 @@ img {
   resize: none;
 }
 
-.modal-call input::-webkit-input-placeholder,
-.modal-call textarea::-webkit-input-placeholder {
+.modal-call__container input::-webkit-input-placeholder,
+.modal-call__container textarea::-webkit-input-placeholder {
   color: #ffffff;
   opacity: 0.7;
 }
 
-.modal-call input::-moz-placeholder,
-.modal-call textarea::-moz-placeholder {
+.modal-call__container input::-moz-placeholder,
+.modal-call__container textarea::-moz-placeholder {
   color: #ffffff;
   opacity: 0.7;
 }
 
-.modal-call input:-ms-input-placeholder,
-.modal-call textarea:-ms-input-placeholder {
+.modal-call__container input:-ms-input-placeholder,
+.modal-call__container textarea:-ms-input-placeholder {
   color: #ffffff;
   opacity: 0.7;
 }
 
-.modal-call input::-ms-input-placeholder,
-.modal-call textarea::-ms-input-placeholder {
+.modal-call__container input::-ms-input-placeholder,
+.modal-call__container textarea::-ms-input-placeholder {
   color: #ffffff;
   opacity: 0.7;
 }
 
-.modal-call input::placeholder,
-.modal-call textarea::placeholder {
+.modal-call__container input::placeholder,
+.modal-call__container textarea::placeholder {
   color: #ffffff;
   opacity: 0.7;
 }
@@ -1356,6 +1380,14 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
+}
+
+.modal-call__button:hover {
+  opacity: 0.7;
+}
+
+.modal-call__button:active {
+  opacity: 0.3;
 }
 
 .modal-call__checkbox-wrapper label {
@@ -1383,6 +1415,14 @@ img {
   outline-offset: 7px;
 }
 
+.modal-call__checkbox-wrapper label:hover {
+  opacity: 0.7;
+}
+
+.modal-call__checkbox-wrapper label:active {
+  opacity: 0.3;
+}
+
 .modal-call__checkbox-wrapper input:checked + label::before {
   background: url("../img/svg/check.svg") center no-repeat;
 }
@@ -1398,10 +1438,19 @@ img {
   cursor: pointer;
 }
 
+.modal-call__button-close:hover {
+  opacity: 0.7;
+}
+
+.modal-call__button-close:active {
+  opacity: 0.3;
+}
+
 .modal-call__button-close::before,
 .modal-call__button-close::after {
   content: "";
-  display: block;
+  position: absolute;
+  left: 7px;
   width: 28px;
   height: 1px;
   background-color: #ffffff;

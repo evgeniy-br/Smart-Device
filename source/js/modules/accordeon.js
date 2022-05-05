@@ -1,4 +1,5 @@
 document.querySelector('.footer__nav').classList.remove('accordeon--open');
+document.querySelector('.footer__contacts-wrapper').classList.remove('accordeon--open');
 
 document.querySelectorAll('.accordeon__trigger').forEach((accordeonTrigger) => {
   accordeonTrigger.addEventListener('click', () => {

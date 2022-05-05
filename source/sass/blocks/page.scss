@@ -13,6 +13,21 @@
   line-height: 21px;
   min-height: 100%;
   background-color: $color-extra-light-gray;
+
+  &--opened-modal {
+    overflow-y: hidden;
+
+    &::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $color-gray-medium-transparent;
+      z-index: 2;
+    }
+  }
 }
 
 .page__header {
