@@ -1,18 +1,33 @@
-.modal-call__container {
+.modal-call {
   display: none;
   position: fixed;
-  width: 500px;
-  min-height: 610px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: $color-blue-another;
-  padding: 40px;
-  border-radius: 3px;
-  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $color-gray-medium-transparent;
+  z-index: 2;
+  overflow: scroll;
 
   &--open {
     display: block;
+  }
+}
+
+.modal-call__container {
+  position: absolute;
+  width: 500px;
+  min-height: 610px;
+  top: 146px;
+  left: 701px;
+  background-color: $color-blue-another;
+  padding: 39px 40px 30px;
+  border-radius: 3px;
+  z-index: 3;
+
+  @media (max-width: $desktop-max) {
+    left: 50%;
+    transform: translate(-50%);
   }
 }
 
@@ -23,7 +38,7 @@
   font-weight: 400;
   color: $color-white;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .modal-call__container p {
@@ -36,11 +51,12 @@
 
 .modal-call__container input {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   min-height: 50px;
   border: none;
   background-color: $color-gray-transparent;
   padding: 15px;
+  padding-top: 12px;
   font-size: 16px;
   line-height: 21px;
   color: $color-white;
@@ -49,7 +65,7 @@
 
 .modal-call__container textarea {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
   min-height: 155px;
   border: none;
   background-color: $color-gray-transparent;
@@ -69,7 +85,9 @@
 
 .modal-call__button {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  padding-top: 6px;
+  letter-spacing: 0.5px;
   min-height: 45px;
   border: none;
   border-radius: 3px;
@@ -130,14 +148,19 @@
   }
 }
 
+.modal-call__checkbox-wrapper input:focus + label {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: 7px;
+}
+
 .modal-call__button-close {
   position: absolute;
   width: 40px;
   height: 40px;
   border: none;
   background-color: transparent;
-  top: 10px;
-  right: 10px;
+  top: 14px;
+  right: 15px;
   cursor: pointer;
 
   &:hover {

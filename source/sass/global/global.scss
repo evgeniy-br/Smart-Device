@@ -28,7 +28,8 @@ img {
   box-sizing: content-box;
 
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
-    width: 64%;
+    max-width: 1220px;
+    width: 95%;
   }
 
   @media (max-width: $tablet-width) {
