@@ -19,7 +19,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    row-gap: 30px;
+    row-gap: 0;
   }
 }
 
@@ -62,6 +62,12 @@
 
   &:hover {
     background-color: $color-blue;
+  }
+}
+
+.advatages__item:not(:last-child) {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
   }
 }
 

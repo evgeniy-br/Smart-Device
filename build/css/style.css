@@ -1987,7 +1987,7 @@ img {
   }
 
   .advatages__list {
-    row-gap: 30px;
+    row-gap: 0;
   }
 
   .advatages__item {
@@ -1998,6 +1998,10 @@ img {
 
   .advatages__item:nth-child(n+3) {
     min-height: 326px;
+  }
+
+  .advatages__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   .advatages__item svg {
