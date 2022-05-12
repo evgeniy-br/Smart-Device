@@ -743,9 +743,6 @@ img {
   max-width: 200px;
   gap: 25px;
   margin-left: 15px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .social__link {
@@ -1514,6 +1511,10 @@ img {
     order: 2;
   }
 
+  .advatages__item--tag {
+    padding: 100px 38px 69px 40px;
+  }
+
   .offers__item--mounting h3 {
     max-width: 165px;
   }
@@ -1896,6 +1897,9 @@ img {
   .social {
     margin-bottom: 4px;
     margin-left: 4px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .accordeon__trigger {

@@ -65,6 +65,12 @@
   }
 }
 
+.advatages__item--tag {
+  @media (min-width: $desktop-min) {
+    padding: 100px 38px 69px 40px;
+  }
+}
+
 .advatages__item svg {
   position: absolute;
   top: 40px;
