@@ -157,7 +157,10 @@
 
 .feedback-form__text-wrapper {
   width: 100%;
-  margin-bottom: 24px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .feedback-form__text-wrapper textarea {

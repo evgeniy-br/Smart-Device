@@ -1135,7 +1135,6 @@ img {
 
 .feedback-form__text-wrapper {
   width: 100%;
-  margin-bottom: 24px;
 }
 
 .feedback-form__text-wrapper textarea {
@@ -2126,6 +2125,10 @@ img {
   .feedback-form__name-wrapper {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .feedback-form__text-wrapper {
+    margin-bottom: 24px;
   }
 
   .feedback-form__text-wrapper textarea {
