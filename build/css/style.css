@@ -1795,7 +1795,6 @@ img {
 
   .feedback-form__checkbox-wrapper label {
     line-height: 15px;
-    max-width: 225px;
   }
 
   .feedback-form__checkbox-wrapper label::before {
@@ -2240,20 +2239,11 @@ img {
   }
 
   .feedback-form__button {
-    width: 100%;
+    width: 44%;
   }
 
   .feedback-form__checkbox-wrapper {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .feedback-form__checkbox-wrapper label {
-    max-width: 395px;
-  }
-
-  .feedback-form__checkbox-wrapper label::before {
-    top: -2px;
+    width: 44%;
   }
 }
 
