@@ -4,8 +4,9 @@ const modalCallcontainer = document.querySelector('.modal-call__container');
 const pageBody = document.querySelector('.page__body');
 const buttonCloseModal = document.querySelector('.modal-call__button-close');
 const nameInput = document.querySelector('#name-call');
-const interectiveElements = document.querySelectorAll('a, textarea, input, button, [tabindex]');
-const interectiveElementsList = [];
+const approvalInput = document.querySelector('#approval-call');
+const inputFirst = document.querySelector('#modal-input-first');
+const inputLast = document.querySelector('#modal-input-last');
 
 if (modalCall) {
   orderButton.addEventListener('click', (evt) => {
@@ -13,23 +14,10 @@ if (modalCall) {
     modalCall.classList.toggle('modal-call--open');
     pageBody.classList.toggle('page__body--opened-modal');
     nameInput.focus();
-    interectiveElements.forEach((interectiveElement) => {
-      if (!modalCall.contains(interectiveElement)) {
-        if (interectiveElement.getAttribute('tabindex') !== '-1') {
-          interectiveElement.setAttribute('tabindex', '-1');
-          interectiveElementsList.push(interectiveElement);
-        }
-      }
-    });
   });
   buttonCloseModal.addEventListener('click', () => {
     modalCall.classList.toggle('modal-call--open');
     pageBody.classList.toggle('page__body--opened-modal');
-    let element;
-    while (interectiveElementsList.length !== 0) {
-      element = interectiveElementsList.pop();
-      element.setAttribute('tabindex', '0');
-    }
   });
   document.addEventListener('keydown', (evt) => {
     if (evt.key === 'Escape') {
@@ -39,11 +27,6 @@ if (modalCall) {
       if (pageBody.classList.contains('page__body--opened-modal')) {
         pageBody.classList.remove('page__body--opened-modal');
       }
-      let element;
-      while (interectiveElementsList.length !== 0) {
-        element = interectiveElementsList.pop();
-        element.setAttribute('tabindex', '0');
-      }
     }
   });
   modalCall.addEventListener('click', (evt) => { // при клике на оверлей
@@ -51,11 +34,12 @@ if (modalCall) {
     if (!target.closest('.modal-call__container')) { // если этот элемент или его родительские элементы не модальное окно
       modalCall.classList.remove('modal-call--open'); // убираем класс открытой модалки
       pageBody.classList.remove('page__body--opened-modal'); // убираем оверлей
-      let element;
-      while (interectiveElementsList.length !== 0) {
-        element = interectiveElementsList.pop();
-        element.setAttribute('tabindex', '0');
-      }
     }
   });
-}
+  inputLast.addEventListener('focus', () => {
+    buttonCloseModal.focus();
+  });
+  inputFirst.addEventListener('focus', () => {
+    approvalInput.focus();
+  });
+};

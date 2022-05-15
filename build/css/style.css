@@ -1135,6 +1135,7 @@ img {
 
 .feedback-form__text-wrapper {
   width: 100%;
+  margin-bottom: 24px;
 }
 
 .feedback-form__text-wrapper textarea {
@@ -1986,7 +1987,7 @@ img {
   }
 
   .advatages__list {
-    row-gap: 0;
+    gap: normal;
   }
 
   .advatages__item {
@@ -2118,12 +2119,13 @@ img {
   }
 
   .feedback-form__wrapper form {
-    row-gap: 20px;
+    gap: normal;
   }
 
   .feedback-form__phone-wrapper,
   .feedback-form__name-wrapper {
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .feedback-form__text-wrapper textarea {
@@ -2134,8 +2136,7 @@ img {
   .feedback-form__button {
     width: 100%;
     margin-right: 0;
-    margin-top: 3px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
   }
 
   .feedback-form__checkbox-wrapper {
