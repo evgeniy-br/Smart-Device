@@ -19,6 +19,8 @@ textareas.forEach((textarea) => {
   });
 });
 
+// Валидация ввода телефона
+
 window.addEventListener('DOMContentLoaded', () => {
   [].forEach.call(document.querySelectorAll('input[type="tel"]'), (input) => {
     let keyCode;
