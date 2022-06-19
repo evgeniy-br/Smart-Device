@@ -1,6 +1,5 @@
 const orderButton = document.querySelector('.header__contacts-button-link');
 const modalCall = document.querySelector('.modal-call');
-const modalCallcontainer = document.querySelector('.modal-call__container');
 const pageBody = document.querySelector('.page__body');
 const buttonCloseModal = document.querySelector('.modal-call__button-close');
 const nameInput = document.querySelector('#name-call');
@@ -42,4 +41,4 @@ if (modalCall) {
   inputFirst.addEventListener('focus', () => {
     approvalInput.focus();
   });
-};
+}
